@@ -1,20 +1,117 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 15em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.headshot {
+  height: 30em;
 }
-
 
 .credit {
   font-size: 0.8em;
   margin-top: 1em;
   color: rgb(116, 123, 255, .5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #213547;
+  padding: 5px 20px;
+}
+
+.navbar-logo a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 20px auto 20px auto;
+  justify-content: space-between;
+}
+
+.image {
+  height: auto;
+  margin-right: 15%; /* Space between the image and the text */
+}
+
+.text-container {
+  margin-left: 8%;
+}
+
+.image, .text-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.tagline {
+  font-size: 30px;
+  color: #646cff;
+}
+
+.image-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.action-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #213547;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15px; /* Space between button and images */
+}
+
+.action-button:hover {
+  background-color: rgb(46, 51, 128);
+  transform: scale(1.05);
+}
+
+.image-container {
+  display: flex;
+}
+
+.clickable-image {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clickable-image:hover {
+  transform: scale(1.1);
 }

@@ -7,3 +7,10 @@ Built with React (+ Typescript) in Vite
 ## Graphic Attribution
 <a href="https://www.flaticon.com/free-animated-icons/excavator" title="excavator animated icons">Excavator animated icons created by Freepik - Flaticon</a>
 
+## Usage
+* To run locally: `npm run dev`
+* To deploy: `npm run deploy`
+
+## TODO
+* Change color theme
+* Add background to intro section
