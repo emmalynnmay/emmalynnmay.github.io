@@ -1,12 +1,69 @@
 
+const ABOUT_TEXT = "Passionate about software engineering and advocating for inclusion in STEM.\nPresident of USU's ACM-W chapter, leading a team in initiatives that empower underrepresented groups in Computer Science.\nUSU's 2024-25 Miss College of Science, supporting and advocating for the needs of Utah State Science students.\nSoftware Engineering Intern developing communication systems at L3Harris. \nOne of the original members of team at the forefront of the integration of artificial intelligence into USU’s courses."
+
+import { useState, useEffect } from "react";
+
 function About() {
+    const text : string = "I am a ";
+    const TEXT_OPTIONS : string[] = [
+      "Software Engineer.",
+      "Computer Scientist.",
+      "Embedded Systems Engineer.",
+      "Graduate Student.",
+      "Full Stack Web Developer.",
+      "Lifelong Learner.",
+      "Utah State University Graduate.",
+    ];
 
     return (
       <>
-        <p>About!</p>
+        <h2 className="section-header">ABOUT</h2>
+        <TypingAnimation text={text} words={TEXT_OPTIONS} />
+        <div className="about-text">
+          <p>{ABOUT_TEXT}</p>
+        </div>
       </>
     )
   }
+
+  const TypingAnimation = ({ text, words, typingSpeed = 100, pauseTime = 1300 }) => {
+    const [displayedText, setDisplayedText] = useState(text);
+    const [currentWordIndex, setCurrentWordIndex] = useState(0);
+    const [currentText, setCurrentText] = useState("");
+    const [deleting, setDeleting] = useState(false);
+  
+    useEffect(() => {
+      const handleTyping = () => {
+        const currentWord = words[currentWordIndex];
+        if (!deleting) {
+          // Typing forward
+          setCurrentText((prev) => currentWord.substring(0, prev.length + 1));
+          if (currentText === currentWord) {
+            setTimeout(() => setDeleting(true), pauseTime);
+          }
+        } else {
+          // Deleting
+          setCurrentText((prev) => currentWord.substring(0, prev.length - 1));
+          if (currentText === "") {
+            setDeleting(false);
+            setCurrentWordIndex((prev) => (prev + 1) % words.length);
+          }
+        }
+      };
+  
+      const typingTimeout = setTimeout(handleTyping, typingSpeed);
+  
+      return () => clearTimeout(typingTimeout);
+    }, [currentText, deleting, words, currentWordIndex, typingSpeed, pauseTime]);
+  
+    useEffect(() => {
+      setDisplayedText(`${currentText}`);
+    }, [currentText]);
+  
+    return <h3 className="changing-text">{text} 
+      <span className="changing-portion">{displayedText}</span>
+    </h3>;
+  };
   
   export default About
   

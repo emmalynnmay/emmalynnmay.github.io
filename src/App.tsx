@@ -14,10 +14,10 @@ function App() {
       <NavHeader/>
       <Intro/>
       <Graphics/>
-      <About/>
-      <Experience/>
-      <Education/>
-      <Projects/>
+      <div id="about_tag"><About/></div>
+      <div id="experience_tag"><Experience/></div>
+      <div id="education_tag"><Education/></div>
+      <div id="projects_tag"><Projects/></div>
     </>
   )
 }

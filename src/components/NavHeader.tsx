@@ -1,7 +1,7 @@
 
 function NavHeader() {
 
-  //TODO: add links!
+  //TODO: add resume link
   //TODO: sticky header
 
   return (
@@ -11,10 +11,10 @@ function NavHeader() {
                 <a href="/">ELM</a>
             </div>
             <ul className="navbar-links">
-                <li><a href="/">About</a></li>
-                <li><a href="/">Experience</a></li>
-                <li><a href="/">Education & Skills</a></li>
-                <li><a href="/">Projects</a></li>
+                <li><a href="#about_tag">About</a></li>
+                <li><a href="#experience_tag">Experience</a></li>
+                <li><a href="#education_tag">Education & Skills</a></li>
+                <li><a href="#projects_tag">Projects</a></li>
                 <li><a href="/">Resume</a></li>
             </ul>
         </nav>

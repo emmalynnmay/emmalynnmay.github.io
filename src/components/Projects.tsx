@@ -3,7 +3,7 @@ function Projects() {
 
     return (
       <>
-        <p>Projects!</p>
+        <h2 className="section-header">PROJECTS</h2>
       </>
     )
   }

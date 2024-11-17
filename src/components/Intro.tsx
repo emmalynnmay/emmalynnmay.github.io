@@ -20,7 +20,7 @@ function Intro() {
                 <a href="https://github.com/emmalynnmay" target="_blank">
                   <img src={github} alt="GitHub's logo." className="clickable-image" />
                 </a>
-                <a  href="https://www.linkedin.com/in/emma-lynn-3a09401b2/" target="_blank">
+                <a  href="https://www.linkedin.com/in/emma-lynn-may-3a09401b2/" target="_blank">
                   <img src={linkedin} alt="LinkedIn's logo." className="clickable-image" />
                 </a>
                 <a href="mailto:emmalynnmayy@gmail.com">

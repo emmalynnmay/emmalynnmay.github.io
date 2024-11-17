@@ -3,7 +3,7 @@ function Education() {
 
     return (
       <>
-        <p>Education!</p>
+        <h2 className="section-header">EDUCATION</h2>
       </>
     )
   }
