@@ -162,22 +162,29 @@
 .box-image {
   width: 90%;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin-bottom: -5px;
 }
 
 /* Title, subtitle, and content styles */
 .box-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: -5px;
+  font-weight: normal;
 }
 
 .box-subtitle {
   font-size: 1.2rem;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  font-weight: normal;
 }
 
 .box-content {
   font-size: 1rem;
   color: #333;
+}
+
+.experience-list {
+  text-align: left;
 }
 
 
