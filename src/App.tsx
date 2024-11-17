@@ -5,6 +5,7 @@ import Graphics from './components/Graphics'
 import About from './components/About'
 import Experience from './components/Experience'
 import Education from './components/Education'
+import Skills from './components/Skills'
 import Projects from './components/Projects'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <div id="about_tag"><About/></div>
       <div id="experience_tag"><Experience/></div>
       <div id="education_tag"><Education/></div>
+      <div id="skills_tag"><Skills/></div>
       <div id="projects_tag"><Projects/></div>
     </>
   )

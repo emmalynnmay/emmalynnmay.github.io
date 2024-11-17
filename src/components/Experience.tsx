@@ -1,6 +1,6 @@
 
 import l3harris from '../assets/l3harris.jpeg'
-import usu from '../assets/usu.jpg'
+import usu from '../assets/ufc-presentation.jpg'
 
 interface BoxProps {
   imageSrc: string;
