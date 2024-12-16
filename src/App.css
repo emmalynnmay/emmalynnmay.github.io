@@ -130,9 +130,9 @@
 }
 
 .about-text {
-  font-weight: lighter;
   width: 40%;
   padding-left: 30px;
+  text-align: left;
 }
 
 .changing-portion {
@@ -201,32 +201,73 @@
 }
 
 .ed-box-image {
-  width: 30%;
+  width: 40%;
   object-fit: cover;
-  padding-right: 0px;
+  padding-right: 50px;
   padding-left: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
+  display: block;
+  margin-left: auto;
 }
 
 .ed-box-title {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   margin-bottom: -5px;
   margin-top: -3px;
   font-weight: normal;
 }
 
 .ed-box-subtitle {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 10px;
   font-weight: normal;
 }
 
 .ed-experience-list {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #333;
-  list-style-type: none;
+  /* list-style-type: none; */
+  margin: 0;
+  padding-left: 20px;
 }
 
+.skill-header {
+  text-align: left;
+  font-weight: normal;
+  padding-left: 35px;
+  font-size: 17pt;
+}
 
+.languages-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -5px; 
+  padding: 20px; */
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  align-items: center; /* Vertically aligns content */
+  gap: 20px; /* Adds space between items */
+  padding: 20px; /* Optional padding around the row */
+}
+
+.language-item {
+  display: flex;
+  flex-direction: column; /* Stack image and text */
+  align-items: center; /* Center-aligns image and text */
+  text-align: center; /* Ensures text stays centered */
+}
+
+.language-icon {
+  width: 100px; 
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.language-name {
+  font-size: 21px; /* Text size */
+  color: #333; /* Adjust text color */
+}
 

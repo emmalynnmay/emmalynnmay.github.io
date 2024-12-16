@@ -4,15 +4,15 @@ const ABOUT_TEXT = "Passionate about software engineering and advocating for inc
 import { useState, useEffect } from "react";
 
 function About() {
-    const text : string = "I am a ";
+    const text : string = "I am a";
     const TEXT_OPTIONS : string[] = [
       "Software Engineer.",
       "Computer Scientist.",
       "Embedded Systems Engineer.",
-      "Graduate Student.",
+      // "Graduate Student.",
       "Full Stack Web Developer.",
       "Lifelong Learner.",
-      "Utah State University Graduate.",
+      // "Utah State University Graduate.",
     ];
 
     return (
@@ -31,6 +31,12 @@ function About() {
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [currentText, setCurrentText] = useState("");
     const [deleting, setDeleting] = useState(false);
+
+    if (words[currentWordIndex][0] == "E") {
+      text += "n ";
+    } else {
+      text += " ";
+    }
   
     useEffect(() => {
       const handleTyping = () => {
