@@ -55,9 +55,9 @@ function Skills() {
         <ProgrammingLanguages languages={[
           { name: "Git", image: git },
           { name: "Shell Scripting", image: shell },
-          { name: "Command Line Interface Navigation", image: command },
+          { name: "Command Line Navigation", image: command },
           { name: "Technical Writing", image: writing },
-          { name: "Application Deployment with AWS", image: aws },
+          { name: "AWS Tools", image: aws },
         ]}/>
       </>
     )

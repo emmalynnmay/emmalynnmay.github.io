@@ -11,7 +11,3 @@ Built with React (+ Typescript) in Vite
 ## Usage
 * To run locally: `npm run dev`
 * To deploy: `npm run deploy`
-
-## TODO
-* Change color theme
-* Add background to intro section

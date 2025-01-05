@@ -28,7 +28,7 @@ const Box: React.FC<BoxProps> = ({ imageSrc, title, subtitle, dates, grad, major
         <ul className="ed-experience-list">
           {content.map((item) => {
             return (
-              <li>{item}</li>
+              <li key={content.indexOf(item)}>{item}</li>
             )
           })}
         </ul>
@@ -45,13 +45,6 @@ function Education() {
         <h2 className="section-header">EDUCATION</h2>
 
         <div className="ed-box-container">
-          {/* <Box
-            imageSrc={usu}
-            title="Master of Computer Science"
-            subtitle="Utah State University"
-            content={["2026 - Present  |  Expected Graduation: Dec 2027", 
-            "___ GPA"]}
-          /> */}
           <Box
             imageSrc={usu}
             title="Bachelor of Science"
@@ -61,11 +54,24 @@ function Education() {
             major="Computer Science Major"
             gpa="3.98 GPA"
             content={[
+            "Computer Science Dept.'s Scholar of the Year (2024-25)",
             "ACM-W President (2024-25), Vice President (2023-24)",
-            "Computer Science Dept's Scholar of the Year (2024-25)",
             "Miss College of Science (2024-25)",
             "Outstanding Junior in the CS Dept. (2023-24)",
             "Attending on full academic scholarship"
+          ]}
+          />
+          <Box
+            imageSrc={usu}
+            title="Master of Computer Science"
+            subtitle="Utah State University"
+            dates="2024 - Present"
+            grad="Expected Graduation: Dec 2027"
+            major="Part Time Student"
+            gpa="4.0 GPA"
+            content={[
+            "Began concurrently with Bachelor's degree",
+            "Currently on hiatus for a year to focus on industry experience"
           ]}
           />
         </div>

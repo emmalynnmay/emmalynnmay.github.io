@@ -19,7 +19,7 @@ const Box: React.FC<BoxProps> = ({ imageSrc, title, subtitle, content }) => {
       <ul className="experience-list">
         {content.map((item) => {
           return (
-            <li>{item}</li>
+            <li key={content.indexOf(item)}>{item}</li>
           )
         })}
       </ul>
