@@ -2,10 +2,9 @@ import headshot from '../assets/headshot.jpg'
 import github from '../assets/github.png'
 import linkedin from '../assets/linkedin.webp'
 import gmail from '../assets/gmail.webp'
+import resume from '../assets/Resume.pdf';
 
 function Intro() {
-
-  //TODO: actually link resume!
 
     return (
       <>
@@ -28,7 +27,11 @@ function Intro() {
                 </a>
 
               </div>
-              <button className="action-button">Resume</button>
+              <a href={resume} without="true" rel="noopener noreferrer" target="_blank">
+                <button className="action-button" trailingicon="picture_as_pdf" label="Resume">
+                Resume
+                </button>
+              </a>
             </div>
 
           </div>
