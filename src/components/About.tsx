@@ -1,5 +1,4 @@
 
-const ABOUT_TEXT = "Passionate about software engineering and advocating for inclusion in STEM.\nPresident of USU's ACM-W chapter, leading a team in initiatives that empower underrepresented groups in Computer Science.\nUSU's 2024-25 Miss College of Science, supporting and advocating for the needs of Utah State Science students.\nSoftware Engineering Intern developing communication systems at L3Harris. \nOne of the original members of team at the forefront of the integration of artificial intelligence into USU’s courses."
 
 import { useState, useEffect } from "react";
 
@@ -19,9 +18,14 @@ function About() {
       <>
         <h2 className="section-header">ABOUT</h2>
         <TypingAnimation text={text} words={TEXT_OPTIONS} />
-        <div className="about-text">
-          <p>{ABOUT_TEXT}</p>
-        </div>
+        <ul className="about-text">
+          <li>Scholar of the Year 2024-25 for Utah State University’s Computer Science department.</li>
+          <li>Software Engineering Intern developing communication systems at L3Harris.</li>
+          <li>President of USU's ACM-W chapter, leading a team in initiatives that empower underrepresented groups in Computer Science.</li>
+          <li>USU's 2024-25 Miss College of Science, supporting and advocating for the needs of Utah State Science students.</li>
+          <li>One of the original members of team at the forefront of the integration of artificial intelligence into USU’s courses.</li>
+          <li>Passionate about software engineering and advocating for inclusion in STEM.</li>
+        </ul>
       </>
     )
   }

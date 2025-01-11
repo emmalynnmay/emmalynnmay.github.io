@@ -1,5 +1,6 @@
 
 import resume from '../assets/Resume.pdf';
+import logo from '../assets/personal-logo.png';
 
 function NavHeader() {
 
@@ -7,8 +8,9 @@ function NavHeader() {
     <>
       <nav className="navbar">
             <div className="navbar-logo">
-                <a href="/">ELM</a>
+                <img src={logo} alt="Girl at computer." className="logo" />
             </div>
+            
             <ul className="navbar-links">
                 <li><a href="#about_tag">About</a></li>
                 <li><a href="#experience_tag">Experience</a></li>
