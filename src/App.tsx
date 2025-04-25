@@ -1,16 +1,25 @@
-import digger from './assets/digger.gif'
 import './App.css'
+import NavHeader from './components/NavHeader'
+import Intro from './components/Intro'
+import Graphics from './components/Graphics'
+import About from './components/About'
+import Experience from './components/Experience'
+import Education from './components/Education'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
 
 function App() {
 
   return (
     <>
-      <h1>Emma Lynn May</h1>
-      <h2>Software Engineering Portfolio</h2>
-
-      <img className="logo" src={digger} alt="digger" />
-      <p>Construction in progress...</p>
-      <a className="credit" href="https://www.flaticon.com/free-animated-icons/excavator" title="excavator animated icons">Excavator animated icons created by Freepik - Flaticon</a>
+      <NavHeader/>
+      <Intro/>
+      <Graphics/>
+      <div id="about_tag"><About/></div>
+      <div id="experience_tag"><Experience/></div>
+      <div id="education_tag"><Education/></div>
+      <div id="skills_tag"><Skills/></div>
+      <div id="projects_tag"><Projects/></div>
     </>
   )
 }
