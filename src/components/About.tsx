@@ -11,7 +11,7 @@ function About() {
       // "Graduate Student.",
       "Full Stack Web Developer.",
       "Lifelong Learner.",
-      // "Utah State University Graduate.",
+      "Proud Aggie.",
     ];
 
     return (
@@ -20,11 +20,10 @@ function About() {
         <TypingAnimation text={text} words={TEXT_OPTIONS} />
         <ul className="about-text">
           <li>Scholar of the Year 2024-25 for Utah State University’s Computer Science department.</li>
-          <li>Software Engineering Intern developing communication systems at L3Harris.</li>
-          <li>President of USU's ACM-W chapter, leading a team in initiatives that empower underrepresented groups in Computer Science.</li>
-          <li>USU's 2024-25 Miss College of Science, supporting and advocating for the needs of Utah State Science students.</li>
+          <li>Associate Software Engineer developing communication systems at L3Harris.</li>
+          <li>Former President of USU's ACM-W chapter, where I led a team in initiatives to empower underrepresented groups in Computer Science.</li>
+          <li>Former Miss College of Science at USU, where I supported and advocated for the needs of Utah State Science students.</li>
           <li>One of the original members of team at the forefront of the integration of artificial intelligence into USU’s courses.</li>
-          <li>Passionate about software engineering and advocating for inclusion in STEM.</li>
         </ul>
       </>
     )

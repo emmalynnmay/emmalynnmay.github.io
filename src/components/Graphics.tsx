@@ -3,7 +3,7 @@ function Graphics() {
 
     return (
       <>
-        <p>Graphics!</p>
+        {/* <p>Graphics!</p> */}
       </>
     )
   }

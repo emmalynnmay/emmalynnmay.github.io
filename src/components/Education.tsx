@@ -1,5 +1,6 @@
 
-import usu from '../assets/usu.jpeg'
+import usu from '../assets/usu-2.jpg'
+import grad from '../assets/grad.jpeg'
 
 interface BoxProps {
   imageSrc: string;
@@ -46,26 +47,27 @@ function Education() {
 
         <div className="ed-box-container">
           <Box
-            imageSrc={usu}
+            imageSrc={grad}
             title="Bachelor of Science"
             subtitle="Utah State University"
-            dates="2022 - Present"
-            grad="Expected Graduation: May 2025"
+            dates="2022 - 2025"
+            grad="Summa Cum Laude"
             major="Computer Science Major"
-            gpa="3.98 GPA"
+            gpa="3.99 GPA"
             content={[
             "Computer Science Dept.'s Scholar of the Year (2024-25)",
             "ACM-W President (2024-25), Vice President (2023-24)",
             "Miss College of Science (2024-25)",
+            "Oustanding Senior in the CS Dept. (2024-25)",
             "Outstanding Junior in the CS Dept. (2023-24)",
-            "Attending on full academic scholarship"
+            "Attended on full academic scholarship"
           ]}
           />
           <Box
             imageSrc={usu}
             title="Master of Computer Science"
             subtitle="Utah State University"
-            dates="2024 - Present"
+            dates="2025 - Present"
             grad="Expected Graduation: Dec 2027"
             major="Part Time Student"
             gpa="4.0 GPA"
