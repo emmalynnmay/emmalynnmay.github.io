@@ -15,11 +15,16 @@ import command from '../assets/skills/command_line.png'
 import writing from '../assets/skills/technical.png'
 import aws from '../assets/skills/aws.png'
 
-const ProgrammingLanguages = ({ languages }) => {
+interface Language {
+  name: string;
+  image: any;
+}
+
+const ProgrammingLanguages = ({languages} : {languages:Language[]}) => {
   
   return (
     <div className="languages-container">
-      {languages.map((language) => (
+      {languages.map((language: Language) => (
         <div key={language.name} className="language-item">
           <img src={language.image} alt={language.name} className="language-icon" />
           <span className="language-name">{language.name}</span>

@@ -7,14 +7,13 @@
 import rf from '../assets/spectrum-allocation.png'
 import youtube from '../assets/youtube-data.png'
 import robots from '../assets/rock-paper-robos.png'
-import drone from '../assets/drone.png'
 import drone2 from '../assets/drone2.png'
 
 interface BoxProps {
   imageSrc: string;
   title: string;
   subtitle: string;
-  content: [string];
+  content: string[];
   projectLink: string;
 }
 

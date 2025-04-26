@@ -6,7 +6,7 @@ interface BoxProps {
   imageSrc: string;
   title: string;
   subtitle: string;
-  content: [string];
+  content: string[];
 }
 
 const Box: React.FC<BoxProps> = ({ imageSrc, title, subtitle, content }) => {

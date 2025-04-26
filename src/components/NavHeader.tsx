@@ -17,7 +17,7 @@ function NavHeader() {
                 <li><a href="#education_tag">Education</a></li>
                 <li><a href="#skills_tag">Skills</a></li>
                 <li><a href="#projects_tag">Projects</a></li>
-                <li><a href={resume} without="true" rel="noopener noreferrer" target="_blank" trailingicon="picture_as_pdf" label="Resume">Resume</a></li>
+                <li><a href={resume} rel="noopener noreferrer" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </>

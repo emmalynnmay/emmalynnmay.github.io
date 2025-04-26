@@ -10,7 +10,7 @@ interface BoxProps {
   grad: string;
   major: string;
   gpa: string;
-  content: [string];
+  content: string[];
 }
 
 const Box: React.FC<BoxProps> = ({ imageSrc, title, subtitle, dates, grad, major, gpa, content }) => {

@@ -27,8 +27,8 @@ function Intro() {
                 </a>
 
               </div>
-              <a href={resume} without="true" rel="noopener noreferrer" target="_blank">
-                <button className="action-button" trailingicon="picture_as_pdf" label="Resume">
+              <a href={resume} rel="noopener noreferrer" target="_blank">
+                <button className="action-button" value="Resume">
                 Resume
                 </button>
               </a>

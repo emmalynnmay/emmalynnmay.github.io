@@ -28,8 +28,8 @@ function About() {
       </>
     )
   }
-
-  const TypingAnimation = ({ text, words, typingSpeed = 100, pauseTime = 1300 }) => {
+//{propA, propB} : {propA:any, propB:any}
+  const TypingAnimation = ({text, words, typingSpeed = 100, pauseTime = 1300} : {text:string, words:string[], typingSpeed?:number, pauseTime?:number}) => {
     const [displayedText, setDisplayedText] = useState(text);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [currentText, setCurrentText] = useState("");
