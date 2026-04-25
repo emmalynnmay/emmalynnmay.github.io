@@ -4,17 +4,6 @@
   padding: 5px;
 }
 
-.headshot {
-  height: 30em;
-  padding-left: 20px;
-}
-
-.credit {
-  font-size: 0.8em;
-  margin-top: 1em;
-  color: rgb(116, 123, 255, .5);
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -57,6 +46,11 @@
   color: #8dcb94;
 }
 
+.headshot {
+  height: 30em;
+  padding-left: 20px;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -80,8 +74,9 @@
 }
 
 .title {
-  font-size: 45px;
+  font-size: 75px;
   margin-bottom: 0;
+  font-family: Optima, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .tagline {
@@ -112,6 +107,49 @@
   background-color: #507254;
   transform: scale(1.05);
 }
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.intro-bg-anim {
+  background: linear-gradient(
+    -45deg,
+    #e8f5e9, #f0f7ee, #ffffff,
+    #c8e6c9, #f1f8e9, #ffffff
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  border-radius: 16px 16px 16px 16px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.text-container,
+.image {
+  position: relative;
+  z-index: 1;
+}
+
+.headshot {
+  height: 30em;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1;
+  border-radius: 40% 40% 40% 40%;
+}
+
+/* Fade-up entrance */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.text-container { animation: fadeUp 0.7s ease both; }
+.image          { animation: fadeUp 0.7s 0.15s ease both; }
 
 .image-container {
   display: flex;
