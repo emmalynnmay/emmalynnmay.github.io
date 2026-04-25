@@ -41,7 +41,7 @@ function Intro() {
         </div>
       </>
     )
-  }
+}
   
   export default Intro
   

@@ -1,5 +1,5 @@
 
-import usu from '../assets/usu-2.jpg'
+import usu from '../assets/usu.jpeg'
 import grad from '../assets/grad.jpeg'
 
 interface BoxProps {

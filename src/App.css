@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+  padding: 5px;
 }
 
 .headshot {
@@ -70,7 +70,8 @@
 }
 
 .text-container {
-  margin-left: 8%;
+  margin-left: 20%;
+  text-align: right;
 }
 
 .image, .text-container {
@@ -184,7 +185,7 @@
 }
 
 .box-image {
-  width: 90%;
+  width: 80%;
   object-fit: cover;
   margin-bottom: -5px;
 }
