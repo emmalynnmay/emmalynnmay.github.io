@@ -1,5 +1,5 @@
 
-import usu from '../assets/usu-2.jpg'
+import usu from '../assets/usu.jpeg'
 import grad from '../assets/grad.jpeg'
 
 interface BoxProps {
@@ -16,25 +16,21 @@ interface BoxProps {
 const Box: React.FC<BoxProps> = ({ imageSrc, title, subtitle, dates, grad, major, gpa, content }) => {
 
   return (
-    <div className="ed-box">
-      <div>
-        <h2 className="ed-box-title">{title}</h2>
-        <h3 className="ed-box-subtitle">{subtitle}</h3>
+    <div className="box">
+      <img src={imageSrc} alt={title} className="box-image" />
+      <h2 className="box-title">{title}</h2>
+      <h3 className="box-subtitle">{subtitle}</h3>
 
-        <p className="ed-experience-list">{dates} &nbsp; | &nbsp; {grad}</p>
-        <p className="ed-experience-list">{major} - <strong>{gpa}</strong></p>
+      <p className="ed-experience-list">{dates} &nbsp; | &nbsp; {grad}</p>
+      <p className="ed-experience-list">{major} - <strong>{gpa}</strong></p>
 
-        <br></br>
-
-        <ul className="ed-experience-list">
-          {content.map((item) => {
-            return (
-              <li key={content.indexOf(item)}>{item}</li>
-            )
-          })}
-        </ul>
-      </div>
-      <img src={imageSrc} alt={title} className="ed-box-image" />
+      <ul className="experience-list">
+        {content.map((item) => {
+          return (
+            <li key={content.indexOf(item)}>{item}</li>
+          )
+        })}
+      </ul>
     </div>
   );
 };
@@ -45,7 +41,17 @@ function Education() {
       <>
         <h2 className="section-header">EDUCATION</h2>
 
-        <div className="ed-box-container">
+        <div className="box-container">
+          <Box
+            imageSrc={usu}
+            title="Master of Computer Science"
+            subtitle="Utah State University"
+            dates="2026 - Present"
+            grad="Expected Graduation: May 2027"
+            major="Part Time Student"
+            gpa="4.0 GPA"
+            content={[]}
+          />
           <Box
             imageSrc={grad}
             title="Bachelor of Science"
@@ -55,25 +61,11 @@ function Education() {
             major="Computer Science Major"
             gpa="3.99 GPA"
             content={[
-            "Computer Science Dept.'s Scholar of the Year (2024-25)",
+            "Computer Science Scholar of the Year (2024-25)",
             "ACM-W President (2024-25), Vice President (2023-24)",
             "Miss College of Science (2024-25)",
-            "Oustanding Senior in the CS Dept. (2024-25)",
-            "Outstanding Junior in the CS Dept. (2023-24)",
-            "Attended on full academic scholarship"
-          ]}
-          />
-          <Box
-            imageSrc={usu}
-            title="Master of Computer Science"
-            subtitle="Utah State University"
-            dates="2025 - Present"
-            grad="Expected Graduation: Dec 2027"
-            major="Part Time Student"
-            gpa="4.0 GPA"
-            content={[
-            "Began concurrently with Bachelor's degree",
-            "Currently on hiatus for a year to focus on industry experience"
+            "Outstanding Senior (2024-25)",
+            "Outstanding Junior (2023-24)"
           ]}
           />
         </div>
