@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3D365C;
+  background-color: #65926a;
   padding: 5px 20px;
   position: sticky;
   top: 0;
@@ -53,6 +53,10 @@
   transition: color 0.3s ease;
 }
 
+.navbar-links a:hover {
+  color: #8dcb94;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -81,7 +85,7 @@
 
 .tagline {
   font-size: 30px;
-  color: #C95792;
+  color: #2a6832;
 }
 
 .image-button-group {
@@ -94,7 +98,7 @@
 .action-button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #3D365C;
+  background-color: #65926a;
   color: white;
   border: none;
   border-radius: 5px;
@@ -104,7 +108,7 @@
 }
 
 .action-button:hover {
-  background-color: #27233b;
+  background-color: #507254;
   transform: scale(1.05);
 }
 
@@ -143,12 +147,13 @@
   margin: 10px;
 }
 
-.about-text li {
+.about-text p {
   margin: 10px;
+  font-size: 1.25em;
 }
 
 .changing-portion {
-  color: #C95792;
+  color: #65926a;
 }
 
 /* Container for the two boxes */
@@ -250,6 +255,7 @@
   /* list-style-type: none; */
   margin: 0;
   padding-left: 20px;
+  text-align: left;
 }
 
 .skill-header {

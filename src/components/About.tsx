@@ -8,23 +8,21 @@ function About() {
       "Software Engineer.",
       "Computer Scientist.",
       "Embedded Systems Engineer.",
-      // "Graduate Student.",
+      "Graduate Student.",
       "Full Stack Web Developer.",
-      "Lifelong Learner.",
-      "Proud Aggie.",
+      // "Lifelong Learner.",
+      // "Proud Aggie.",
     ];
 
     return (
       <>
         <h2 className="section-header">ABOUT</h2>
         <TypingAnimation text={text} words={TEXT_OPTIONS} />
-        <ul className="about-text">
-          <li>Scholar of the Year 2024-25 for Utah State University’s Computer Science department.</li>
-          <li>Associate Software Engineer developing communication systems at L3Harris.</li>
-          <li>Former President of USU's ACM-W chapter, where I led a team in initiatives to empower underrepresented groups in Computer Science.</li>
-          <li>Former Miss College of Science at USU, where I supported and advocated for the needs of Utah State Science students.</li>
-          <li>One of the original members of team at the forefront of the integration of artificial intelligence into USU’s courses.</li>
-        </ul>
+        <div className="about-text">
+          <p>I recently graduated with a B.S. in computer science from Utah State University. I'm excited to be continuing my educating through pursuing a master's degree in computer science at Utah State's Salt Lake campus.</p>
+          <p>I currently work at L3Harris Technologies as an Associate Software Engineer. In my role, I design, develop, and test mission-critical software for embedded communication systems. I thrive when I can spend my time solving complicated technical problems, and I have enjoyed developing those skills in this role. I have also had the opportunity to strengthen my communication abilities through working on a team of multi-disciplinary engineers.</p>
+          <p>I am passionate about increasing advocacy and support for women and other underrepresented individuals in technology. I was able to work towards these objectives while completing my undergraduate degree by serving as President of USU's ACM-W chapter and Miss College of Science 2024-25. I am currently an active member of the SLC chapter of WE3 (Women who Strive for Empowering, Enhancing, and Encouraging Other Women) at L3Harris.</p>
+        </div>
       </>
     )
   }

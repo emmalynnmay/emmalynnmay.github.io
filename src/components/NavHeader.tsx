@@ -1,6 +1,6 @@
 
 import resume from '../assets/Resume.pdf';
-import logo from '../assets/personal-logo.png';
+import logo from '../assets/logo.png';
 
 function NavHeader() {
 

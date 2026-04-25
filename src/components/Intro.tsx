@@ -10,8 +10,8 @@ function Intro() {
       <>
         <div className="container">
           <div className="text-container">
-            <h1 className="title">Emma Lynn May</h1>
-            <h2 className="tagline">Software Engineering Portfolio</h2>
+            <h1 className="title">Emma May</h1>
+            <h2 className="tagline">Software Engineer</h2>
 
             <div className="image-button-group">
               <div className="image-container">
@@ -36,7 +36,7 @@ function Intro() {
 
           </div>
           <div className="image">
-            <img className="headshot" src={headshot} alt="Professional photo of Emma Lynn May." />
+            <img className="headshot" src={headshot} alt="Professional headshot of Emma May." />
           </div>
         </div>
       </>
